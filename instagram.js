@@ -1,4 +1,6 @@
-  setTimeout(
+document.querySelector('body').setAttribute("id", "one");  
+
+setTimeout(
     function() {
 
 var d1 = document.getElementById('one');
