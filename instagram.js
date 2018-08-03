@@ -4,7 +4,7 @@ setTimeout(
     function() {
 
 var d1 = document.getElementById('one');
-d1.insertAdjacentHTML('beforeend', '<div style="" id="ig-popup"><div class="ig-flex"><div class="ig-image"></div><div class="ig-content"><h2>Follow us on Instagram!</h2><hr><p>always be the first to know about new arrivals, sales and sneak peaks - follow us on instagram</p><a href="https://www.instagram.com/lux_zurich/" target="_blank"><button id="browse">browse now</button></a><button id="close">close</button></div></div></div><div style="" id="overlay"></div>');
+d1.insertAdjacentHTML('beforeend', '<div style="" id="ig-popup"><div class="ig-flex"><div class="ig-image"></div><div class="ig-content"><h2>Follow us on Instagram!</h2><hr><p>Always be the first to know about new arrivals, sales and sneak peaks</p><a href="https://www.instagram.com/lux_zurich/" target="_blank"><button id="browse">browse now</button></a><button id="close">X</button></div></div></div><div style="" id="overlay"></div>');
 
 
 
