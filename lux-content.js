@@ -1,5 +1,5 @@
 var $ = jQuery.noConflict(); 
-$(document).ready(function() {
+
 	var hermesTitle = 'Secondhand Hermes Handbags, Scarves, Shoes & Accessories'
 	var hermesParagraph = '<p>Hermes is one of the top designers you’ll find here at LUX. We carry a wide variety of secondhand Hermes handbags and other items, with options that can match any look and personality. Whether you’re looking for the perfect handbag, scarf, or other Hermes product, LUX has one of the largest selections you’ll find anywhere.</p>'
 	var chanelTitle = 'Secondhand Chanel Handbags, Dresses, Shoes & Accessories'
@@ -22,4 +22,3 @@ $(document).ready(function() {
 		$('.category-view').css('margin-bottom', '0');
 		$('.page-title-wrapper').css('padding-bottom', '50px');
 	}
-});
