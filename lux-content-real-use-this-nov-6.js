@@ -43,15 +43,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	if (breadList[2].innerText === 'Louis Vuitton' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(lvTitle, lvParagraph);
+		document.title = 'High-Quality Pre-Owned Louis Vuitton Handbags & Clothing';
+		document.querySelector('meta[name="keywords"]').setAttribute("content", 'Louis Vuitton is one of the most reputable and well-recognized designers on the market, and for good reason. Here at LUX, you’ll find many high-quality secondhand Louis Vuitton handbags and much more. Browse our selection of Louis Vuitton products here and shop with us today.');
 	}
 
 
 	if (breadList[2].innerText === 'Gucci' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(gucciTitle, gucciParagraph);
+		document.title = 'High-Quality Secondhand Gucci Handbags & Accessories for Sale';
+		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Gucci handbags and much more here at LUX. Browse our selection of Louis Vuitton products here and shop with us today.');
 	}
 
 	if (breadList[2].innerText === 'Valentino' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(valentinoTitle, valentinoParagraph);
+		document.title = 'High-Quality Pre-Owned Valentino Handbags & Accessories';
+		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Valentino handbags and much more here at LUX. Browse our selection of Valentino products here and shop with us today. ');
 	}
 
 
