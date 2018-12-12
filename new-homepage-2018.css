@@ -1,0 +1,1422 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:300,400,500,600,700,800,900');
+/* General Styles */
+
+body,
+html {
+	font-family: 'Open Sans', sans-serif;
+/*	overflow-x: hidden !important;*/
+/*	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
+/*	max-width: 1600px;
+	margin: 0 auto;*/
+}
+
+.paras-parent {
+	overflow-x: hidden !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.section {
+	padding-top: 3.4em;
+	padding-bottom: 3.4em;
+}
+
+
+.hero-background {
+	background: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/mobile-background-revisited.png');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.hero-background .trust-pilot {
+	width: auto;
+	height: 100%;
+	text-align: center;
+}
+
+
+.hero-background .heading-parent {
+	text-align: center;
+}
+
+.hero-background .heading-parent h1 {
+	font-weight: 800; 
+	font-size: 2em;
+	margin: 0.5em 0;
+}
+
+.paras-parent h2 {
+	font-size: 1.7em; 
+	font-weight: 800; 
+	margin-bottom: 0.8em;
+}
+
+
+.paras-parent h3 {
+	color: #666666; 
+	font-size: 1.3em;
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+.paras-parent p {
+	color: #95989A;
+	font-weight: 500;
+	line-height: 1.8;
+	font-size: 0.9em;
+
+}
+
+.make-me-white {
+	color: #fff !important;
+}
+
+.make-me-bold {
+	font-weight: 800 !important;
+}
+
+.fancy-list {
+	display: flex;
+	align-items: center;
+	margin-right: 6px;
+}
+
+.fancy-list .fancy-list-icon {
+	height: 30px;
+	width: 30px;
+}
+
+.fancy-list .box {
+	height: 35px;
+	width: 35px;
+}
+
+.flex-child {
+	margin: 0 5px;
+}
+
+
+.third-fancy-list {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.fancy-list-parent {
+	display: flex;
+}
+
+.rating-parent {
+	margin: 0 7px;
+	margin-top: 20px;
+}
+
+.rating-parent .star {
+	width: 25px;
+	height: 25px;
+}
+
+.rating-flex {
+	display: flex;
+}
+
+.rating-parent h6 {
+	margin-top: 10px;
+}
+
+.new-button {
+	background-color: #fff;
+	outline: 0;
+	border: 0;
+	border-radius: 100px;
+	font-weight: 700;
+	font-family: 'poppins', sans-serif;
+	padding: 14px 30px;
+	margin: 5px;
+	width: 100%;
+	position: relative;
+		-webkit-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	cursor: pointer;
+}
+
+.button-parent {
+	margin-top: 15px;
+}
+
+
+
+.button-call:before {
+	content: '';
+	position: absolute; 
+	top: 50%;
+	left: 20px;
+	background-image: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/icons/phone-receiver.png');
+	background-size: contain;
+	background-position: 0 50%;
+	width: 20px;
+	height: 20px;
+	transform: translateY(-50%);
+}
+
+.button-chat:before {
+	content: '';
+	position: absolute; 
+	top: 50%;
+	left: 20px;
+	background-image: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/icons/support.png');
+	background-size: contain;
+	background-position: 0 50%;
+	width: 23px;
+	height: 23px;
+	transform: translateY(-50%);
+}
+
+.button-chat {
+	padding-left: 40px;
+}
+
+.open-left-flex {
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26ff2e+0,26ff2e+38,5db160+100 */
+background: #26ff2e; /* Old browsers */
+background: -moz-linear-gradient(top, #26ff2e 0%, #26ff2e 38%, #5db160 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #26ff2e 0%,#26ff2e 38%,#5db160 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #26ff2e 0%,#26ff2e 38%,#5db160 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26ff2e', endColorstr='#5db160',GradientType=0 ); /* IE6-9 */
+	height: 13px;
+	width: 13px;
+	border-radius: 100px;
+		-webkit-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+}
+
+.open-flex-left-child {
+	margin-right: 10px;
+}
+
+
+
+.button-flex {
+	display: flex;
+	justify-content: center;
+}
+
+.open-info {
+	margin: 15px 0;
+}
+
+.open-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.open-left h6 {
+	margin-bottom: 0;
+}
+
+.open-flex .open-right {
+	padding-right: 1.2em;
+}
+
+.pay-me {
+	width: 45px;
+	height: auto;
+	margin: 5px;
+}
+
+.hero-images {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 8px;
+	max-width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+		-webkit-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+}
+
+.hero-image-one {
+	margin-right: 10px;
+}
+
+.hero-image-two {
+	margin-left: 10px;
+}
+
+.hero-image-flex {
+	display: flex;
+}
+
+
+.second-section {
+	background-color: #F3F7F8;
+}
+
+.second-section h2,
+.second-section h3 {
+	text-align: center;
+}
+
+.second-section h2 {
+	margin-bottom: 0.5rem;
+}
+
+
+.second-section h3 {
+	margin: 1.4em auto;
+	line-height: 1.6;
+}
+
+.paras-parent ul li,
+.paras-parent h4 {
+	font-family: 'poppins', sans-serif;
+	font-weight: 800; 
+	margin: 1.8em 0;
+	font-size: 1em;
+	color: #535353;
+}
+
+.paras-parent ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.third-section {
+	background-color: #F9FAFC;
+}
+
+.my-card {
+	background-color: #fff;
+	padding: 2em 1em;
+	padding-top: 4em;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 3px 90px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 90px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 90px 6px rgba(0,0,0,0.16);
+	position: relative;
+}
+
+.icon-for-card.yellow {
+	background-color: #FFC426;
+}
+
+.icon-for-card {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 100px;
+	-webkit-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 136px 6px rgba(0,0,0,0.16);
+	background-color: #fff;
+}
+
+.first-card-icon {
+	width: 80px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.carousel-cell {
+	padding: 5em 0;
+	width: 100%;
+}
+
+.flickity-prev-next-button {
+	display: none;
+}
+
+.flickity-page-dots {
+	bottom: 20px !important;
+}
+
+.flickity-page-dots .dot {
+		-webkit-box-shadow: 10px 3px 36px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 36px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 36px 6px rgba(0,0,0,0.16);
+}
+
+.dot.is-selected {
+	background-color: #FFC426 !important;
+}
+
+.dot {
+	background-color: #fff !important;
+	opacity: 1 !important;
+}
+
+.fourth-section,
+.eleventh-section {
+	background: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/cta-background.png');
+	background-size: cover;
+	background-position: 30% 50%;
+	background-repeat: no-repeat;
+}
+
+
+h2.cta-heading {
+	font-size: 1.5em;
+	line-height: 1.4;
+}
+
+.new-button.global-new-button {
+	max-width: 200px;
+	padding: 18px 30px;
+	font-size: 1.2em;
+}
+
+
+.fifth-section {
+	background-color: #F9FAFC;
+}
+
+.my-card.general-card {
+	padding: 1em;
+	-webkit-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+}
+
+.carousel-cell.general-cell {
+	padding: 2em 0;
+}
+
+
+.general-carousel .flickity-page-dots {
+	bottom: -15px !important;
+}
+
+.main-carousel-two .my-card {
+	min-height: 503px;
+}
+
+
+.sixth-section {
+	background-color: #EDF5F7;
+}
+
+.sixth-section .my-card,
+.twelvth-section .my-card {
+	max-width: 70%;
+	text-align: center;
+}
+
+.paras-parent hr {
+	border: 0;
+	height: 3px;
+	max-width: 120px;
+	background-color: #FFC400;
+	outline: 0;
+	border-radius: 100px; 
+	margin: 2em auto;
+}
+
+.wrapper-for-small-bio {
+	padding-top: 4em;
+}
+
+p.small {
+	color: #999999;
+	font-size: 0.8em;
+}
+
+.seventh-section {
+	background: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/background-two.png');
+	background-size: cover;
+	background-position: 50% 40%; 
+	background-repeat: no-repeat;
+}
+
+.heavy-headings {
+	line-height: 1.4;
+}
+
+.seventh-section-images,
+.eight-section-images {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	max-width: 50%;
+}
+
+
+.image-wrap-for-flex-seventh,
+.image-wrap-for-flex-eight {
+	display: flex;
+	padding-bottom: 100px;
+	padding-top: 1.5em;
+}
+
+.seventh-section-image-two,
+.eight-section-image-two {
+	position: relative;
+	right: 15%;
+	top: 80px;
+}
+
+.eight-section {
+	background: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/background-three.png');
+	background-size: cover;
+	background-position: 50% 40%; 
+	background-repeat: no-repeat;	
+}
+
+
+.eight-section-images {
+	max-width: 40%;
+	height: 110px;
+}
+
+.eight-section-image-three {
+	position: relative;
+	right: 20%;
+	top: 50px;
+}
+
+.paras-pb-2 {
+	padding-bottom: 1.5rem;
+}
+
+.paras-pb-3 {
+	padding-bottom: 2.8rem;
+}
+
+.bulgary-images {
+	width: 100%;
+	height: 170px;
+	object-fit: cover;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+	-moz-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+	box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.16);
+}
+
+
+.tenth-section {
+	background-color: #F4F4F4;
+}
+
+.tenth-section .card-content {
+	padding: 1.5em 1.3em 2.5em 1.3em;
+}
+
+
+.make-me-black {
+	color: #000 !important;
+}
+
+.card-with-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.general-card.card-with-image {
+	padding: 0;
+	border-radius: 10px;
+}
+
+.card-with-image h4,
+h4.normal-margins {
+	margin: .6em 0;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.eleventh-section h4.normal-margins {
+	font-size: 1.25em;
+}
+
+
+.learn-me-man {
+	font-weight: 800;
+	color: #F4A900;
+	font-size: 0.9em;
+	padding: 0.5em 0;
+	letter-spacing: 1.3px;
+}
+
+
+.section.extended {
+	padding-bottom: 4em;
+}
+
+.section.decreased {
+	padding-bottom: 3em;
+}
+
+.engineer-images:nth-child(2) {
+	margin-top: 10px;
+}
+
+.engineer-grid {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.engineer-image-full {
+	height: 100%;
+}
+
+.global-new-button.global-new-button-fix {
+	padding: 14px 30px;
+	font-size: initial;
+	max-width: 175px;
+}
+
+
+.twelvth-section {
+	background-color: #F9FAFC;
+}
+
+.twelvth-section .my-card {
+	text-align: left;
+}
+
+
+
+/* Some fixes */
+
+
+.open-flex .open-right {
+	padding-left: 1em;
+	padding-right: 13px;
+}
+
+.open-flex .open-left {
+	padding-left: 10px;
+}
+
+.pay-me {
+	width: 35px;
+}
+
+.images-parent {
+	padding-top: 0.8em;
+	padding-bottom: 0.5em;
+}
+
+.rating-parent {
+	margin-bottom: 20px;
+}
+
+
+.paras-parent .twelvth-section ul li {
+color: #333;
+}
+
+
+.flickity-enabled.is-draggable .flickity-viewport {
+	overflow: visible;
+}
+
+
+.paras-pt-1 {
+	padding-top: 0.2rem;
+}
+
+
+
+.show-after-768,
+.show-after-992,
+.show-after-1200 {
+	display: none;
+}
+
+
+
+/* Hover Styles */
+
+.new-button {
+	transition: 0.2s ease;
+}
+
+.new-button:hover {
+/*	filter: invert(100%);*/
+	background-color: #FFF8EA;
+	transition: 0.2s ease;
+		-webkit-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.26);
+	-moz-box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.26);
+	box-shadow: 10px 3px 50px 6px rgba(0,0,0,0.26);	
+	transform: translateY(-2px);
+}
+
+
+
+.circle {
+	position: relative;
+
+}
+
+.circle:before, .circle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 255, 46, 0.4);
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 2s linear;
+}
+.circle:before {
+  transform: scale(1);
+  animation: oh 2.5s infinite linear;
+}
+.circle:after {
+  animation: oh 2s 1s infinite linear;
+}
+
+
+@keyframes oh {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+
+.uk-logo-wrapper {
+	display: none;
+}
+
+
+/* Fixing extremely small devices*/
+
+@media (max-width: 358px) {
+	h6 {
+		font-size: 0.7rem;
+	}
+
+	.new-button {
+		font-size: 0.7rem;
+	}
+
+	.button-chat:before,
+	.button-call:before {
+		width: 18px;
+		height: 18px;
+	}
+
+	.pay-me {
+		width: 30px;
+	}
+
+	.fancy-list .fancy-list-icon,
+	.fancy-list .box {
+		width: 24px;
+		height: 24px;
+	}
+
+	.circle {
+		width: 9px;
+		height: 9px;
+	}
+
+	.rating-parent .star {
+		width: 20px;
+		height: 20px;
+	}
+
+	.paras-parent h2 {
+		font-size: 1.4em;
+	}
+
+	.second-section h3 {
+		font-size: 1em;
+	}
+
+	.paras-parent p {
+		font-size: 0.8em;
+	}
+
+	.paras-parent ul li, .paras-parent h4 {
+		font-size: 0.8em;
+	}
+
+	h2.cta-heading {
+		font-size: 1.3em;
+	}
+
+	.new-button.global-new-button {
+		font-size: 1em;
+	}
+
+	.eleventh-section h4.normal-margins {
+		font-size: 0.9em;
+	}
+
+
+}
+
+
+
+
+
+/* Media Queries For Larger Screens Start Here */
+
+@media (min-width: 540px) {
+	.new-button {
+		font-size: 1.2em;
+	}
+
+	.hero-images {
+		height: 190px;
+	}
+
+	.my-card {
+		width: 90%;
+		max-width: 400px;
+	}
+
+	.sixth-section .my-card, .twelvth-section .my-card {
+		width: 70%;
+		max-width: 300px;
+		padding: 2em 1em;
+	}
+
+	.seventh-section-images {
+		height: 170px;
+	}
+
+
+	.eight-section-images {
+		height: 170px;
+	}
+
+	.bulgary-images {
+		height: 200px;
+	}
+
+	.baliff-image {
+		height: 300px;
+	}
+
+	.engineer-image-full {
+		height: 100%;
+	}
+
+	.button-call:before {
+		left: 50px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.button-chat:before {
+		left: 40px;
+		width: 25px;
+		height: 25px;
+	}
+
+
+	.fancy-list-parent,
+	.third-fancy-list,
+	.rating-flex {
+		justify-content: center;
+	}
+
+	.rating-parent {
+		text-align: center; 
+	}
+
+	.third-fancy-list {
+		margin-bottom: 25px;
+	}
+
+
+}
+
+
+
+
+@media (min-width: 768px) {
+	.new-button {
+		font-size: initial;
+	}
+
+	.button-call:before,
+	.button-chat:before {
+		left: 20px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.hero-background .heading-parent h1 {
+		text-align: left;
+	}
+
+	.fancy-list-parent, .third-fancy-list, .rating-flex {
+		justify-content: flex-start;
+	}
+
+	.fancy-list-parent .fancy-list:nth-child(1) img,
+	.fancy-list.third-fancy-list img {
+		margin-left: 0;
+	}
+
+	.hero-background .heading-parent,
+	.rating-parent {
+		text-align: left;
+	}
+
+
+	.hero-background {
+	background: url('https://londonlocksmith24h.co.uk/wp-content/themes/construction/london-locksmith-assets/hero-image.png');
+	background-size: cover;
+	background-position: 20% 50%;
+	background-repeat: no-repeat;
+	}
+
+	.a-little-soft {
+		font-size: 0.9em;
+	}
+
+	.circle {
+		height: 10px;
+		width: 10px;
+	}
+
+	.button-chat {
+		padding-left: 50px;
+	}
+
+	.button-call {
+		padding-left: 40px;
+	}
+
+	.hero-image-two {
+		margin-left: 0;
+	}
+
+	.hero-images {
+		max-width: 70%;
+		height: 240px;
+	}
+
+	.hero-background .images-parent {
+		position: relative;
+		left: 20px;
+	}
+
+	.hide-after-768 {
+		display: none;
+	}
+
+	.show-after-768 {
+		display: block;
+	}
+
+	.liberate {
+		padding: 3.5em 0;
+	}
+
+	.liberate-one .my-card {
+		min-height: 390px;
+		width: 100%;
+	}
+
+	.liberate-one .col-md-6:nth-child(3) .my-card {
+		margin-top: 5em;
+	}
+
+	.liberate-one .row {
+		justify-content: center;
+	}
+
+
+	h2.cta-heading {
+		font-size: 2em;
+	}
+
+
+	.liberate-two .my-card {
+		min-height: 590px;
+		width: 100%;
+	}
+
+	.sixth-section .my-card {
+		width: 100%;
+	}
+
+	.main-carousel-three {
+		overflow: hidden;
+	}
+
+	.main-carousel-three .carousel-cell.general-cell {
+		padding: 4em;
+	}
+
+	.main-carousel-three .flickity-page-dots {
+		bottom: 20px !important;
+	}
+
+	.m-500 {
+		max-width: 550px;
+	}
+
+	.m-500 h2 {
+		line-height: 1.3;
+	}
+
+
+	.insurance-approved-images {
+		min-height: 300px;
+		max-width: 50%;
+	}
+
+	.insurance-image-flex .insurance-approved-images:nth-child(2) {
+		object-position: right;
+	}
+
+	.wrapper-for-small-bio {
+		text-align: center;
+	}
+
+	.seventh-section-images {
+		height: 150px;
+		max-width: 52%;
+	}
+
+	.eight-section-images {
+		height: 150px;
+		max-width: 48%;
+	}
+
+	.sixth-section .main-carousel-three .my-card hr {
+		margin-left: 0;
+	}
+
+	.sixth-section .main-carousel-three .my-card ul {
+		text-align: left;
+	}
+
+	.sixth-section .main-carousel-three .my-card {
+		padding: 2em;
+	}
+
+
+	.uk-logo-wrapper {
+			display: flex;
+		}
+
+
+		.uk-logo {
+			width: auto;
+			height: 80px;
+			float: right;
+		}
+
+}
+
+
+
+	@media (min-width: 992px) {
+
+
+		.show-after-992 {
+			display: block;
+		}
+
+
+		.hide-after-992 {
+			display: none;
+		}
+
+		.hero-images {
+			height: 280px;
+			max-width: 60%;
+		}
+
+		.hero-background .rating-parent {
+			display: flex;
+			align-items: center;
+
+		}
+
+		.hero-background .rating-parent .rating-flex {
+			margin-right: 1em;
+		}
+
+		.new-button {
+			max-width: 180px;
+		}
+
+		.button-flex {
+			justify-content: flex-start;
+		}
+
+		.open-flex {
+			max-width: 370px;
+		}
+
+		.second-section h3 br {
+			display: none;
+		}
+
+		.second-section h3 {
+			max-width: 450px;
+		}
+
+		.paras-parent p {
+			font-size: 1em;
+		}
+
+		.large-m-500 {
+			max-width: 550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.liberate-one .col-md-6:nth-child(3) .my-card {
+			margin-top: 0;
+		}
+
+		.liberate-one .my-card {
+			min-height: 435px;
+		}
+
+
+		.liberate {
+			padding: 4em 0;
+		}
+
+		h2.cta-heading {
+			font-size: 2.4em;
+		}
+
+		.paras-parent h2 {
+			font-size: 2em;
+		}
+
+		.liberate-three .my-card {
+		    min-height: 420px;
+		}
+
+		.liberate .my-card {
+			padding: 2em;
+			max-width: 100%;
+		}
+
+		.seventh-section-images {
+			max-width: 55%;
+			height: 235px;
+		}
+
+
+		.eight-section-images {
+			max-width: 43%;
+			height: 180px;
+		}
+
+
+			.paras-mt-3 {
+		margin-top: 2rem;
+		}
+
+		.wrapper-for-small-bio {
+			max-width: 900px;
+		}
+
+		.burglary-content-two {
+			padding-top: 1rem;
+		}
+
+
+		.large-m-450 {
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.paras-pb-3-large {
+			padding-bottom: 2rem;
+		}
+
+
+		.liberate-four .my-card {
+			padding: 0;
+			min-height: 400px;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.en-1,
+		.en-2 {
+			height: 300px;
+		}
+
+		.engineer-images:nth-child(2) {
+			margin-top: 1.3em;
+		}
+
+		.engineer-grid {
+			max-width: 650px;
+			padding-bottom: 3em;
+		}
+
+		.global-new-button.global-new-button-fix {
+			font-size: 1.2em;
+		}
+
+		.liberate-five .my-card {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.liberate-five .my-card hr {
+			margin-left: 0;
+		}
+
+		.hero-background .heading-parent h1 {
+			font-size: 2.3em;
+			margin-top: 0.2rem;
+		}
+
+		.hero-background .trust-pilot {
+			position: relative;
+			right: 7px;
+		}
+
+
+		.insurance-approved-images {
+			min-height: 300px;
+			max-width: 50%;
+		}
+
+
+
+	}
+
+
+
+
+@media (min-width: 1200px) {
+
+	.uk-logo {
+		margin-top: -30px;
+		position: relative;
+		left: 10px;
+	}
+
+	.show-after-1200 {
+		display: block;
+	}
+
+	.hide-after-1200 {
+		display: none;
+	}
+
+
+	.personal-wrapper {
+		max-width: 1140px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.paras-parent .personal-wrapper hr {
+		margin-left: 0;
+	}
+
+	.paras-parent .personal-wrapper ul {
+		text-align: left;
+	}
+
+	.paras-parent .personal-wrapper .my-card {
+		padding: 2.3em;
+	}
+
+
+	.wrapper-for-small-bio {
+		padding-top: 1em;
+		max-width: 900px;
+	}
+
+
+	.but-flex-me {
+		display: flex !important;
+	}
+
+
+	.hero-background .heading-parent h1 {
+		font-size: 3em;
+	}
+
+	.fancy-list h6 {
+		font-size: 0.8rem;
+	}
+
+	.open-left h6 {
+		font-size: 1rem;
+	}
+
+	.max-width-800 {
+		max-width: 800px;
+	}
+
+	.paras-parent h2 {
+		font-size: 2.2em;
+	}
+
+	.liberate-one .my-card {
+		max-width: 100%;
+		min-height: 390px;
+		padding-top: 3.5em;
+		width: 100%;
+	}
+
+	h2.cta-heading {
+		font-size: 2.5em;
+	}
+
+	.liberate-two .my-card {
+		width: 100%;
+		max-width: 100%;
+		min-height: 530px;
+	}
+
+
+	.liberate-three .my-card {
+		width: 100%;
+		max-width: 100%;
+		padding: 2em !important;
+	}
+
+	.paras-parent h4 {
+		font-size: 1.1em;
+	}
+
+	.tight-columns {
+		position: relative;
+		left: 10px;
+	}
+
+	.sixth-section .m-500 {
+		max-width: 650px;
+	}
+
+	.seventh-section-images {
+		height: 245px;
+	}
+
+	.eight-section-images {
+		max-width: 42%;
+		height: 200px;
+	}
+
+	.pay-me {
+		width: 40px;
+	}
+
+		.hero-background .hero-images {
+		height: 330px;
+	}
+
+		.hero-background .images-parent {
+		top: 20px;
+	}
+
+
+	.insurance-approved-images {
+		max-width: 60%;
+		min-height: 340px;
+	}
+
+
+
+}
+
+
+
+@media (min-width: 1300px) {
+
+		.hero-background .hero-images {
+		height: 360px;
+		max-width: 70%;
+	}
+
+	.hero-background .images-parent {
+		top: 20px;
+	}
+
+
+}
+
+
+@media (min-width: 1400px) {
+	.insurance-approved-images {
+		max-width: 70%;
+		min-height: 380px;
+	}
+
+	.eight-section-images-parent {
+		position: relative;
+		left: 20px;
+	}
+
+	.eight-section-images {
+		max-width: 45%;
+
+	}
+
+
+}
+
+
+@media (min-width: 1600px) {
+	.hero-background .hero-images {
+		max-width: 80%;
+	}
+}
+
+
+@media (min-width: 1700px) {
+	.hero-background .hero-images,
+	.insurance-approved-images {
+		height: 420px;
+		max-width: 85%;
+	}
+}
+
+
+@media (min-width: 1900px) {
+	.hero-background .hero-images {
+		height: 450px;
+		max-width: 94%;
+	}
+}
