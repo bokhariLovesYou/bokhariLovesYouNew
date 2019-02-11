@@ -122,7 +122,8 @@ window.onload = function () {
 	}
 
 	if (breadList[2].innerText === 'Alexander McQueen' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
-		contentReplace(alexTitle, $alexExtendedContent);
+		contentReplace(alexTitle, null);
+		appendParent.append($alexExtendedContent);
 		document.title = 'High-Quality Pre-Owned Alexander McQueen Consignment';
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'Alexander McQueen is among the most reputable and well-known designers in the industry, as a result of their consistent quality of products. Here at LUX, you’ll find many high-quality Alexander McQueen consignment, from elegant dresses to sequined clutches.');
 	}
