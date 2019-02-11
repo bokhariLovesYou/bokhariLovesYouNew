@@ -1,4 +1,3 @@
-window.onload = function () {
 	// Add Content For Brand Pages Over Here As Variables
 	var hermesTitle = 'Secondhand Hermes Handbags, Scarves, Shoes & Accessories'
 	var hermesParagraph = 'Hermes is one of the top designers you’ll find here at LUX. We carry a wide variety of secondhand Hermes handbags and other items, with options that can match any look and personality. Whether you’re looking for the perfect handbag, scarf, or other Hermes product, LUX has one of the largest selections you’ll find anywhere.'
@@ -35,6 +34,17 @@ window.onload = function () {
 	$chloeExtendedContent += '<h2 style="margin: 25px 0;">Shop Our Entire Inventory of Pre-Owned Chloé Handbags, Chloé Clothing, and Products from Other Designers</h2>';
 	$chloeExtendedContent += '<p>Here at LUX, you’ll find a wide variety of pre-owned Chloé handbags and clothing, along with other products and consignment from many other reputable designers. Regardless of your specific style and desired look, we have something to leave you satisfied when you shop at LUX today.</p>';
 	$chloeExtendedContent += '<p>Have any questions or concerns about any of our Chloé products or other consignment available from LUX? Contact us today and we’ll get back to you as quickly as possible.</p>';
+
+
+	const alexTitle = 'Secondhand Alexander McQueen Dresses, Coats, Boots & Clutches';
+	const alexParagraph = 'Alexander McQueen is one of the most well-recognized and respected designers, which is why we’re proud to include them in our inventory here at LUX. We carry a variety of secondhand Alexander McQueen dresses, coats, clutch purses, and other items, with plenty of unique options for everyone looking for the perfect Alexander McQueen clothing and accessories. Whether you’re searching for the an elegant Alexander McQueen embellished clutch or stylish Alexander McQueen boots, we have what you’re looking for from this renowned designer.Established in 1992 by young fashion designer Lee Alexander McQueen, the British label has since grown into one of the most well-known brands worldwide, with a reputation for producing top-quality clothing, clutches, and many other other luxury goods using some of the best available materials. With Alexander McQueen products from LUX, you get peak quality with each and every design. We’re proud to feature some of the best pre-owned Alexander McQueen coats, dresses, jackets, boots, and other products that are available at some of the best prices you’ll find anywhere, with the same level of quality you’d find with newer Alexander McQueen products. We carry purely authentic consignment that meets the highest standards.';
+	let $alexExtendedContent = '<h2 style="margin: 25px 0;">Pre-Owned Alexander McQueen Clothing and Much More</h2>';
+	$alexExtendedContent += '<p>Here at LUX, we have one of the largest collections of Alexander McQueen products available, including a variety of clothing, Alexander McQueen embellished sequined handbags, and many others. We also carry a selection of Alexander McQueen flats, boots, and other footwear that can complement your look. You can combine any of our Alexander McQueen products with other secondhand items from LUX, with Alexander McQueen clothing and much more available in our wide selection, along with consignment from many other reputable designers.</p>';
+	$alexExtendedContent += '<p>Browse our complete inventory of secondhand Alexander McQueen bags and more below, and shop with us today. We likely have what you’re searching for in our vast selection of designer products.</p>';
+	$alexExtendedContent += '<h2 style="margin: 25px 0;">Find the Perfect Alexander McQueen Boots, Jackets, Dresses, and Accessories</h2>';
+	$alexExtendedContent += '<p>In addition to Alexander McQueen clothing, we also carry a wide range of Alexander McQueen flats, boots, and accessories that are designed with some of the highest quality materials, available here at LUX at some of the most reasonable prices available. All of our secondhand Alexander McQueen consignment can complete your collection of products from this designer, without forcing you to spend more than you need to on top-quality designer handbags and more. <br><br> When you shop here at LUX, you’ll be able to find everything you want from a wide selection of trusted designers, with one of the most extensive selections of Alexander McQueen products available anywhere. Whether you’re searching for a signature sequined clutch, or an Alexander McQueen shoe or other type of clothing or accessory, simply browse our complete selection below and you’ll be able to locate the perfect products based on your personal style.</p>';
+	$alexExtendedContent += '<h2 style="margin: 25px 0;">Shop Our Alexander McQueen Clutch Purses, Clothing, and More</h2>'
+	$alexExtendedContent += '<p>Here at LUX, you’ll find plenty of pre-owned Alexander McQueen products, as well as consignment from many other widely recognized designers. You won’t need to worry about having trouble finding the perfect products for you with our expansive selection of consignment. Regardless of your particular style and tastes, we have something for everyone in our expansive selection.</p>'
 	
 	
 	// Script Works From Here.
@@ -108,19 +118,26 @@ window.onload = function () {
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Chloé handbags and much more here at LUX. Browse our selection of Chloé products here and shop with us today.');
 	}
 
+	if (breadList[2].innerText === 'Alexander McQueen' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
+		contentReplace(alexTitle, alexParagraph);
+		appendParent.append($alexExtendedContent);
+		document.title = 'High-Quality Pre-Owned Alexander McQueen Consignment';
+		document.querySelector('meta[name="keywords"]').setAttribute("content", 'Alexander McQueen is among the most reputable and well-known designers in the industry, as a result of their consistent quality of products. Here at LUX, you’ll find many high-quality Alexander McQueen consignment, from elegant dresses to sequined clutches.');
+	}
+
 
 	
 	
 // 	Adding Read More Button	
 let hidden = false;
-let originalText = jQuery('.page-title-wrapper h2').next().text();
+let originalText = jQuery('.page-title-wrapper h1:first').next().text();
 
 if (jQuery('.page-title-wrapper').text().length > 700) {
-		const nextAll = jQuery('.page-title-wrapper h2').next().nextAll();
-		const next = jQuery('.page-title-wrapper h2').next();
+		const nextAll = jQuery('.page-title-wrapper h1:first').next().nextAll();
+		const next = jQuery('.page-title-wrapper h1:first').next();
 		nextAll.hide();
 		hidden = true;
-    	next.text(next.text().substring(0,100) + '...');
+    	next.text(next.text().substring(0,250) + '...');
     	jQuery('.page-title-wrapper').append('<div class="read-more-button-parent" style="text-align: right;"><span class="read-more-button" style="font-weight: bold; border: 1px solid #000; padding: 0.3rem 0.6rem; cursor: pointer;">Read More +</span></div>')
   }
 
@@ -128,18 +145,16 @@ if (jQuery('.page-title-wrapper').text().length > 700) {
 const readMoreButton = jQuery('.read-more-button');
 readMoreButton.click( () => {
 	if (hidden === true) {
-	jQuery('.page-title-wrapper h2').next().text(originalText);
-	jQuery('.page-title-wrapper h2').next().nextAll().show();
+	jQuery('.page-title-wrapper h1:first').next().text(originalText);
+	jQuery('.page-title-wrapper h1:first').next().nextAll().show();
 	readMoreButton.text('Read Less -');
 	hidden = false;
 	} else if (hidden === false) {
-	const nextt = jQuery('.page-title-wrapper h2').next();
-	nextt.text(nextt.text().substring(0,100) + '...');
-	jQuery('.page-title-wrapper h2').next().nextAll().not('.read-more-button-parent').hide();
+	const nextt = jQuery('.page-title-wrapper h1:first').next();
+	nextt.text(nextt.text().substring(0,250) + '...');
+	jQuery('.page-title-wrapper h1:first').next().nextAll().not('.read-more-button-parent').hide();
 	readMoreButton.text('Read More +');
 	hidden = true;
 	}
 });
 	
-
-}
