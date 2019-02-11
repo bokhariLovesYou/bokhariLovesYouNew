@@ -95,6 +95,8 @@
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Valentino handbags and much more here at LUX. Browse our selection of Valentino products here and shop with us today. ');
 	}
 	
+	window.onload = function () {
+
 	if (breadList[2].innerText === 'Badgley Mischka' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(badTitle, badParagraph);
 		appendParent.append(badParagraphTwo);
@@ -157,3 +159,4 @@ readMoreButton.click( () => {
 	}
 });
 	
+}
