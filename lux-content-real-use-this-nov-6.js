@@ -109,5 +109,37 @@ window.onload = function () {
 	}
 
 
+	
+	
+// 	Adding Read More Button	
+let hidden = false;
+let originalText = jQuery('.page-title-wrapper h2').next().text();
+
+if (jQuery('.page-title-wrapper').text().length > 700) {
+		const nextAll = jQuery('.page-title-wrapper h2').next().nextAll();
+		const next = jQuery('.page-title-wrapper h2').next();
+		nextAll.hide();
+		hidden = true;
+    	next.text(next.text().substring(0,100) + '...');
+    	jQuery('.page-title-wrapper').append('<div class="read-more-button-parent" style="text-align: right;"><span class="read-more-button" style="font-weight: bold; border: 1px solid #000; padding: 0.3rem 0.6rem; cursor: pointer;">Read More +</span></div>')
+  }
+
+
+const readMoreButton = jQuery('.read-more-button');
+readMoreButton.click( () => {
+	if (hidden === true) {
+	jQuery('.page-title-wrapper h2').next().text(originalText);
+	jQuery('.page-title-wrapper h2').next().nextAll().show();
+	readMoreButton.text('Read Less -');
+	hidden = false;
+	} else if (hidden === false) {
+	const nextt = jQuery('.page-title-wrapper h2').next();
+	nextt.text(nextt.text().substring(0,100) + '...');
+	jQuery('.page-title-wrapper h2').next().nextAll().not('.read-more-button-parent').hide();
+	readMoreButton.text('Read More +');
+	hidden = true;
+	}
+});
+	
 
 }
