@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 	// Add Content For Brand Pages Over Here As Variables
 	var hermesTitle = 'Secondhand Hermes Handbags, Scarves, Shoes & Accessories'
 	var hermesParagraph = 'Hermes is one of the top designers you’ll find here at LUX. We carry a wide variety of secondhand Hermes handbags and other items, with options that can match any look and personality. Whether you’re looking for the perfect handbag, scarf, or other Hermes product, LUX has one of the largest selections you’ll find anywhere.'
@@ -44,7 +45,7 @@
 	var splitURL = currentURL.split('/');
 	var lastURL = splitURL.pop();
 	var splitLastURL = lastURL.split('?');
-	var appendParent = jQuery('.page-title-wrapper');
+	var appendParent = document.querySelector('.page-title-wrapper');
 
 	// Reusable Function
 	function contentReplace(title, paragraph ) {
@@ -107,3 +108,6 @@
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Chloé handbags and much more here at LUX. Browse our selection of Chloé products here and shop with us today.');
 	}
 
+
+
+})
