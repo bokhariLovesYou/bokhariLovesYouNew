@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var splitURL = currentURL.split('/');
 	var lastURL = splitURL.pop();
 	var splitLastURL = lastURL.split('?');
-	var appendParent = document.querySelector('.page-title-wrapper');
+	var appendParent = jQuery('.page-title-wrapper');
 
 	// Reusable Function
 	function contentReplace(title, paragraph ) {
