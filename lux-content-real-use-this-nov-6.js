@@ -1,4 +1,3 @@
-window.onload = function () {
 
 	// Add Content For Brand Pages Over Here As Variables
 	var hermesTitle = 'Secondhand Hermes Handbags, Scarves, Shoes & Accessories'
@@ -16,7 +15,7 @@ window.onload = function () {
 	var valentinoParagraph = 'Valentino is among the many well-known and reputable designers available here at LUX. We carry a wide variety of pre-owned Valentino handbags and many other items, with plenty of options to match your style. Whether you’re searching for the ideal handbag, blouse, sandal, or other Valentino item, LUX has one of the most expansive selections of luxury Valentino products on the market.'
 	
 	var badTitle = 'Secondhand Badgley Mischka Handbags, Clothing, Shoes & Accessories';
-	var badParagraph = 'Established in 1988 by Mark Badgley and James Mischka, Badhley Mischka has since grown into one of the most reputable and recognized brands in the world, known for producing top-quality clothing, handbags, and a wide variety of other luxury goods using some of the best available materials. With Badgley Mischka products, you get the highest level of quality with each and every design.';
+	var badParagraph = '<p>Established in 1988 by Mark Badgley and James Mischka, Badhley Mischka has since grown into one of the most reputable and recognized brands in the world, known for producing top-quality clothing, handbags, and a wide variety of other luxury goods using some of the best available materials. With Badgley Mischka products, you get the highest level of quality with each and every design.</p>';
 	var badParagraphTwo = '<p>Here at LUX, we’re proud to feature pre-owned Badgley Mischka handbags, shoes, and accessories that are available at some of the best prices on the market, with the same level of quality you’d find with newer Badgley Mischka products. We only carry authentic consignment that meets the highest standards.</p>';
 	var badTitleTwo = '<h2 style="margin: 25px 0;">Shop Our Badgley Mischka Handbags, Clothing, and More</h2>';
 	var badTitleTwoParagraphOne = '<p>Here at LUX, you’ll find plenty of pre-owned Badgley Mischka products, as well as consignment from many other top designers. You won’t need to worry about being unable to find the perfect products for you with our expansive selection of secondhand consignment. Regardless of your particular tastes and style, we have something for everyone, whether you’re looking for designer handbags or other luxury consignment.</p>';
@@ -58,7 +57,8 @@ window.onload = function () {
 	var splitURL = currentURL.split('/');
 	var lastURL = splitURL.pop();
 	var splitLastURL = lastURL.split('?');
-	var appendParent = jQuery('.page-title-wrapper');
+	var appendParent = document.querySelector('.page-title-wrapper');
+
 
 	// Reusable Function
 	function contentReplace(title, paragraph ) {
@@ -101,65 +101,79 @@ window.onload = function () {
 
 	if (breadList[2].innerText === 'Badgley Mischka' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(badTitle, badParagraph);
-		appendParent.append(badParagraphTwo);
-		appendParent.append(badTitleTwo);
-		appendParent.append(badTitleTwoParagraphOne);
+		let theKid = document.createElement('div');
+		theKid.innerHTML = badParagraph + badParagraphTwo + badTitleTwo + badTitleTwoParagraphOne;
+		appendParent.appendChild(theKid);
 		document.title = 'High-Quality Pre-Owned Badgley Mischka Designer Consignment';
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'Badgley Mischka is one of the most reputable and well-recognized designers on the market, and for good reason. Here at LUX, you’ll find many high-quality secondhand Badgley Mischka clothing, handbags and much more. Browse our selection of Badgley Mischka products here and shop with us today.');
 	}
 	
 	if (breadList[2].innerText === 'Yves Saint Laurent' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(yvesTitle, yvesParagraph);
-		appendParent.append($yvesExtendedContent);
+		let theKid = document.createElement('div');
+		theKid.innerHTML = $yvesExtendedContent
+		appendParent.appendChild(theKid);
 		document.title = 'Secondhand Yves Saint Laurent Handbags & Clothing';
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from Yves Saint Laurent, you’ll find many high-quality pre-owned Yves Saint Laurent handbags, shoes and much more here at LUX. Browse our selection of Yves Saint Laurent products here and shop with us today.');
 	}
 	
 	if (breadList[2].innerText === 'Chloé' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(chloeTitle, chloeParagraph);
-		appendParent.append($chloeExtendedContent);
+		let theKid = document.createElement('div');
+		theKid.innerHTML = $chloeExtendedContent;
+		appendParent.appendChild(theKid);
 		document.title = 'High-Quality Pre-Owned Chloé Handbags, Shoes & Clothing';
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'If you’re looking for some of the best bags, shoes, belts, clothing, or other accessories from this reputable brand, you’ll find many high-quality pre-owned Chloé handbags and much more here at LUX. Browse our selection of Chloé products here and shop with us today.');
 	}
 
 	if (breadList[2].innerText === 'Alexander McQueen' && breadList[1].innerText === 'Designers' && breadList.length > 2 && breadList.length < 4 && (splitLastURL.length === 1 || splitLastURL.indexOf('p=1') > -1)) {
 		contentReplace(alexTitle, alexParagraph);
-		appendParent.append($alexExtendedContent);
+		let theKid = document.createElement('div');
+		theKid.innerHTML = $alexExtendedContent;
+		appendParent.appendChild(theKid);
 		document.title = 'High-Quality Pre-Owned Alexander McQueen Consignment';
 		document.querySelector('meta[name="keywords"]').setAttribute("content", 'Alexander McQueen is among the most reputable and well-known designers in the industry, as a result of their consistent quality of products. Here at LUX, you’ll find many high-quality Alexander McQueen consignment, from elegant dresses to sequined clutches.');
 	}
 
 
-	
-	
-// 	Adding Read More Button	
-let hidden = false;
-let originalText = jQuery('.page-title-wrapper h1:first').next().text();
 
-if (jQuery('.page-title-wrapper').text().length > 700) {
-		const nextAll = jQuery('.page-title-wrapper h1:first').next().nextAll();
-		const next = jQuery('.page-title-wrapper h1:first').next();
-		nextAll.hide();
+
+window.onload = function () {
+
+	// 	Adding Read More Button	
+	let hidden = false;
+	let originalText = jQuery('.page-title-wrapper h1:first').next().text();
+
+	if (jQuery('.page-title-wrapper').text().length > 700) {
+			const nextAll = jQuery('.page-title-wrapper h1:first').next().nextAll();
+			const next = jQuery('.page-title-wrapper h1:first').next();
+			nextAll.hide();
+			hidden = true;
+	    	next.text(next.text().substring(0,250) + '...');
+	    	jQuery('.page-title-wrapper').append('<div class="read-more-button-parent" style="text-align: right;"><span class="read-more-button" style="font-weight: bold; border: 1px solid #000; padding: 0.3rem 0.6rem; cursor: pointer;">Read More +</span></div>')
+	  }
+
+
+	const readMoreButton = jQuery('.read-more-button');
+	readMoreButton.click( () => {
+		if (hidden === true) {
+		jQuery('.page-title-wrapper h1:first').next().text(originalText);
+		jQuery('.page-title-wrapper h1:first').next().nextAll().show();
+		readMoreButton.text('Read Less -');
+		hidden = false;
+		} else if (hidden === false) {
+		const nextt = jQuery('.page-title-wrapper h1:first').next();
+		nextt.text(nextt.text().substring(0,250) + '...');
+		jQuery('.page-title-wrapper h1:first').next().nextAll().not('.read-more-button-parent').hide();
+		readMoreButton.text('Read More +');
 		hidden = true;
-    	next.text(next.text().substring(0,250) + '...');
-    	jQuery('.page-title-wrapper').append('<div class="read-more-button-parent" style="text-align: right;"><span class="read-more-button" style="font-weight: bold; border: 1px solid #000; padding: 0.3rem 0.6rem; cursor: pointer;">Read More +</span></div>')
-  }
-
-
-const readMoreButton = jQuery('.read-more-button');
-readMoreButton.click( () => {
-	if (hidden === true) {
-	jQuery('.page-title-wrapper h1:first').next().text(originalText);
-	jQuery('.page-title-wrapper h1:first').next().nextAll().show();
-	readMoreButton.text('Read Less -');
-	hidden = false;
-	} else if (hidden === false) {
-	const nextt = jQuery('.page-title-wrapper h1:first').next();
-	nextt.text(nextt.text().substring(0,250) + '...');
-	jQuery('.page-title-wrapper h1:first').next().nextAll().not('.read-more-button-parent').hide();
-	readMoreButton.text('Read More +');
-	hidden = true;
-	}
-});
+		}
+	});
 	
 }
+
+
+
+
+
+	
